@@ -1,0 +1,18 @@
+<h1>Hospitals#index</h1>
+<p>Find me in app/views/hospitals/index.html.erb</p>
+<% @hospitals.keys.each do |state| %>
+	<h3><%= state %></h3>
+	<table>
+	<% @hospitals[state].each do |h| %>
+		<tr>
+			<td><%= h.name.split.collect{ |n| n.capitalize }.join(" ") %></td>
+			<td><%= h.location.city.split.collect{ |n| n.capitalize }.join(" ") %></td>
+			<td><%= h.provider_number %></td>
+			<td><%= h.phone_number %></td>
+			<td><%= h.hospital_type %></td>
+			<td><%= h.hospital_ownership %></td>
+			<td><%= h.emergency_services.to_s %></td>
+		</tr>
+	<% end %>
+	</table>
+<% end %>

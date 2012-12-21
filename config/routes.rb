@@ -1,5 +1,7 @@
 HealthyCity::Application.routes.draw do
   
+  resources :hospitals
+
   resources :locations
 
   root :to => 'locations#index'
