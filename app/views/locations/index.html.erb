@@ -1,0 +1,26 @@
+<h1>Locations#index</h1>
+<p>Find me in app/views/locations/index.html.erb</p>
+
+<table>
+	<tr>
+		<th>Address_1</th>
+		<th>Address_2</th>
+		<th>Address_3</th>
+		<th>City</th>
+		<th>State</th>
+		<th>Zip Code</th>
+		<th>County</th>
+		<th>Hospitals Count</th>
+	</tr>
+	<% @locations.each do |l| %>
+	<tr>
+		<td> <%= l.address_1 %> </td>
+		<td> <%= l.address_2 %> </td>
+		<td> <%= l.address_3 %> </td>
+		<td> <%= l.city %> </td>
+		<td> <%= l.state %> </td>
+		<td> <%= l.zip_code %> </td>
+		<td> <%= l.county %> </td>
+	</tr>
+	<% end %>
+</table>

@@ -1,0 +1,337 @@
+Provider ID,Measure,Rate (per 1,000 Discharges)
+AK,ED1,274
+AL,ED1,240
+AR,ED1,223
+AS,ED1,Not Available
+AZ,ED1,292
+CA,ED1,334
+CO,ED1,244
+CT,ED1,351
+DC,ED1,452
+DE,ED1,387
+FL,ED1,315
+GA,ED1,279
+GU,ED1,Not Available
+HI,ED1,330
+IA,ED1,198
+ID,ED1,238
+IL,ED1,265
+IN,ED1,239
+KS,ED1,180
+KY,ED1,244
+LA,ED1,266
+MA,ED1,311
+MD,ED1,367
+ME,ED1,281
+MI,ED1,291
+MN,ED1,202
+MO,ED1,239
+MP,ED1,Not Available
+MS,ED1,217
+MT,ED1,219
+NC,ED1,312
+ND,ED1,189
+NE,ED1,209
+NH,ED1,298
+NJ,ED1,355
+NM,ED1,312
+NV,ED1,337
+NY,ED1,366
+OH,ED1,270
+OK,ED1,211
+OR,ED1,234
+PA,ED1,275
+PR,ED1,778
+RI,ED1,343
+SC,ED1,272
+SD,ED1,176
+TN,ED1,239
+TX,ED1,274
+UT,ED1,215
+VA,ED1,286
+VI,ED1,1025
+VT,ED1,295
+WA,ED1,260
+WI,ED1,204
+WV,ED1,268
+WY,ED1,216
+AK,ED2,102
+AL,ED2,74
+AR,ED2,70
+AS,ED2,Not Available
+AZ,ED2,102
+CA,ED2,124
+CO,ED2,92
+CT,ED2,145
+DC,ED2,214
+DE,ED2,174
+FL,ED2,124
+GA,ED2,92
+GU,ED2,Not Available
+HI,ED2,149
+IA,ED2,55
+ID,ED2,84
+IL,ED2,92
+IN,ED2,80
+KS,ED2,55
+KY,ED2,78
+LA,ED2,87
+MA,ED2,117
+MD,ED2,151
+ME,ED2,116
+MI,ED2,106
+MN,ED2,61
+MO,ED2,77
+MP,ED2,Not Available
+MS,ED2,60
+MT,ED2,64
+NC,ED2,115
+ND,ED2,58
+NE,ED2,80
+NH,ED2,115
+NJ,ED2,143
+NM,ED2,111
+NV,ED2,154
+NY,ED2,145
+OH,ED2,89
+OK,ED2,61
+OR,ED2,80
+PA,ED2,98
+PR,ED2,240
+RI,ED2,121
+SC,ED2,94
+SD,ED2,41
+TN,ED2,75
+TX,ED2,100
+UT,ED2,62
+VA,ED2,99
+VI,ED2,620
+VT,ED2,119
+WA,ED2,97
+WI,ED2,64
+WV,ED2,84
+WY,ED2,64
+AK,OP 18,125
+AL,OP 18,138
+AR,OP 18,129
+AS,OP 18,Not Available
+AZ,OP 18,170
+CA,OP 18,173
+CO,OP 18,141
+CT,OP 18,135
+DC,OP 18,200
+DE,OP 18,156
+FL,OP 18,160
+GA,OP 18,148
+GU,OP 18,Not Available
+HI,OP 18,142
+IA,OP 18,108
+ID,OP 18,130
+IL,OP 18,142
+IN,OP 18,133
+KS,OP 18,107
+KY,OP 18,133
+LA,OP 18,132
+MA,OP 18,152
+MD,OP 18,Not Available
+ME,OP 18,119
+MI,OP 18,134
+MN,OP 18,126
+MO,OP 18,138
+MP,OP 18,Not Available
+MS,OP 18,122
+MT,OP 18,127
+NC,OP 18,155
+ND,OP 18,114
+NE,OP 18,108
+NH,OP 18,148
+NJ,OP 18,149
+NM,OP 18,158
+NV,OP 18,160
+NY,OP 18,155
+OH,OP 18,136
+OK,OP 18,112
+OR,OP 18,138
+PA,OP 18,135
+PR,OP 18,Not Available
+RI,OP 18,167
+SC,OP 18,137
+SD,OP 18,113
+TN,OP 18,133
+TX,OP 18,135
+UT,OP 18,125
+VA,OP 18,150
+VI,OP 18,Not Available
+VT,OP 18,137
+WA,OP 18,138
+WI,OP 18,120
+WV,OP 18,150
+WY,OP 18,111
+AK,Door to diagnostic eval,22
+AL,Door to diagnostic eval,36
+AR,Door to diagnostic eval,31
+AS,Door to diagnostic eval,Not Available
+AZ,Door to diagnostic eval,28
+CA,Door to diagnostic eval,33
+CO,Door to diagnostic eval,21
+CT,Door to diagnostic eval,31
+DC,Door to diagnostic eval,63
+DE,Door to diagnostic eval,41
+FL,Door to diagnostic eval,30
+GA,Door to diagnostic eval,35
+GU,Door to diagnostic eval,Not Available
+HI,Door to diagnostic eval,25
+IA,Door to diagnostic eval,21
+ID,Door to diagnostic eval,19
+IL,Door to diagnostic eval,33
+IN,Door to diagnostic eval,27
+KS,Door to diagnostic eval,21
+KY,Door to diagnostic eval,28
+LA,Door to diagnostic eval,32
+MA,Door to diagnostic eval,40
+MD,Door to diagnostic eval,Not Available
+ME,Door to diagnostic eval,28
+MI,Door to diagnostic eval,24
+MN,Door to diagnostic eval,27
+MO,Door to diagnostic eval,30
+MP,Door to diagnostic eval,Not Available
+MS,Door to diagnostic eval,35
+MT,Door to diagnostic eval,22
+NC,Door to diagnostic eval,39
+ND,Door to diagnostic eval,25
+NE,Door to diagnostic eval,22
+NH,Door to diagnostic eval,32
+NJ,Door to diagnostic eval,35
+NM,Door to diagnostic eval,34
+NV,Door to diagnostic eval,26
+NY,Door to diagnostic eval,36
+OH,Door to diagnostic eval,27
+OK,Door to diagnostic eval,27
+OR,Door to diagnostic eval,32
+PA,Door to diagnostic eval,31
+PR,Door to diagnostic eval,Not Available
+RI,Door to diagnostic eval,39
+SC,Door to diagnostic eval,34
+SD,Door to diagnostic eval,15
+TN,Door to diagnostic eval,29
+TX,Door to diagnostic eval,28
+UT,Door to diagnostic eval,21
+VA,Door to diagnostic eval,34
+VI,Door to diagnostic eval,Not Available
+VT,Door to diagnostic eval,28
+WA,Door to diagnostic eval,23
+WI,Door to diagnostic eval,19
+WV,Door to diagnostic eval,34
+WY,Door to diagnostic eval,21
+AK,Median time to pain med,53
+AL,Median time to pain med,71
+AR,Median time to pain med,70
+AS,Median time to pain med,Not Available
+AZ,Median time to pain med,60
+CA,Median time to pain med,69
+CO,Median time to pain med,48
+CT,Median time to pain med,61
+DC,Median time to pain med,83
+DE,Median time to pain med,78
+FL,Median time to pain med,69
+GA,Median time to pain med,70
+GU,Median time to pain med,Not Available
+HI,Median time to pain med,61
+IA,Median time to pain med,47
+ID,Median time to pain med,51
+IL,Median time to pain med,57
+IN,Median time to pain med,55
+KS,Median time to pain med,48
+KY,Median time to pain med,61
+LA,Median time to pain med,66
+MA,Median time to pain med,61
+MD,Median time to pain med,Not Available
+ME,Median time to pain med,57
+MI,Median time to pain med,57
+MN,Median time to pain med,48
+MO,Median time to pain med,59
+MP,Median time to pain med,Not Available
+MS,Median time to pain med,70
+MT,Median time to pain med,44
+NC,Median time to pain med,70
+ND,Median time to pain med,58
+NE,Median time to pain med,46
+NH,Median time to pain med,63
+NJ,Median time to pain med,61
+NM,Median time to pain med,70
+NV,Median time to pain med,55
+NY,Median time to pain med,66
+OH,Median time to pain med,59
+OK,Median time to pain med,59
+OR,Median time to pain med,58
+PA,Median time to pain med,63
+PR,Median time to pain med,Not Available
+RI,Median time to pain med,59
+SC,Median time to pain med,60
+SD,Median time to pain med,49
+TN,Median time to pain med,68
+TX,Median time to pain med,63
+UT,Median time to pain med,44
+VA,Median time to pain med,62
+VI,Median time to pain med,Not Available
+VT,Median time to pain med,72
+WA,Median time to pain med,54
+WI,Median time to pain med,41
+WV,Median time to pain med,78
+WY,Median time to pain med,39
+AK,Head CT results,42
+AL,Head CT results,31
+AR,Head CT results,43
+AS,Head CT results,Not Available
+AZ,Head CT results,36
+CA,Head CT results,37
+CO,Head CT results,49
+CT,Head CT results,51
+DC,Head CT results,0
+DE,Head CT results,44
+FL,Head CT results,49
+GA,Head CT results,29
+GU,Head CT results,Not Available
+HI,Head CT results,36
+IA,Head CT results,52
+ID,Head CT results,20
+IL,Head CT results,52
+IN,Head CT results,51
+KS,Head CT results,38
+KY,Head CT results,37
+LA,Head CT results,36
+MA,Head CT results,60
+MD,Head CT results,Not Available
+ME,Head CT results,31
+MI,Head CT results,40
+MN,Head CT results,39
+MO,Head CT results,54
+MP,Head CT results,Not Available
+MS,Head CT results,31
+MT,Head CT results,13
+NC,Head CT results,48
+ND,Head CT results,40
+NE,Head CT results,88
+NH,Head CT results,39
+NJ,Head CT results,56
+NM,Head CT results,32
+NV,Head CT results,38
+NY,Head CT results,45
+OH,Head CT results,47
+OK,Head CT results,42
+OR,Head CT results,46
+PA,Head CT results,47
+PR,Head CT results,Not Available
+RI,Head CT results,40
+SC,Head CT results,53
+SD,Head CT results,35
+TN,Head CT results,40
+TX,Head CT results,41
+UT,Head CT results,57
+VA,Head CT results,40
+VI,Head CT results,Not Available
+VT,Head CT results,40
+WA,Head CT results,35
+WI,Head CT results,55
+WV,Head CT results,44
+WY,Head CT results,17
