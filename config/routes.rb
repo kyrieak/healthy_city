@@ -1,10 +1,13 @@
 HealthyCity::Application.routes.draw do
-  
-  resources :hospitals
 
+  resources :users do
+    resources :activities
+  end
+
+  resources :hospitals
   resources :locations
 
-  root :to => 'locations#index'
+  root :to => 'users#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

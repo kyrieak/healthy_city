@@ -1,0 +1,41 @@
+---
+:anim:
+- icons/anim_elephant.png
+- icons/anim_giraffe.png
+- icons/anim_gorilla.png
+- icons/anim_lion.png
+- icons/anim_zebra.png
+:biggo:
+- icons/biggo_batty.png
+- icons/biggo_dogbo.png
+- icons/biggo_dogby.png
+- icons/biggo_ducky.png
+- icons/biggo_elephanta.png
+- icons/biggo_foxy.png
+- icons/biggo_froggy.png
+- icons/biggo_kitty.png
+- icons/biggo_liony.png
+- icons/biggo_mouse.png
+- icons/biggo_panda.png
+- icons/biggo_penguino.png
+- icons/biggo_tuqui.png
+:dino:
+- icons/dino_brontosaurus.png
+- icons/dino_pterodactyl.png
+- icons/dino_stegosaurus.png
+- icons/dino_t-rex.png
+- icons/dino_triceratops.png
+:mammoth:
+- icons/mammoth_standing.png
+- icons/mammoth_back.png
+- icons/mammoth_happy.png
+- icons/mammoth_seated.png
+:marvel:
+- icons/marvel_cyclops.png
+- icons/marvel_ghostrider.png
+- icons/marvel_hulk.png
+- icons/marvel_ironman.png
+- icons/marvel_mr_fantastic.png
+- icons/marvel_punisher.png
+- icons/marvel_spiderman.png
+- icons/marvel_wolverine.png

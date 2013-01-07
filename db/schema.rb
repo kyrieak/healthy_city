@@ -11,7 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121221062301) do
+ActiveRecord::Schema.define(:version => 20121231122405) do
+
+  create_table "activities", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "icon_id"
+    t.string   "label"
+    t.string   "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -32,6 +41,12 @@ ActiveRecord::Schema.define(:version => 20121221062301) do
     t.datetime "updated_at",         :null => false
   end
 
+  create_table "icons", :force => true do |t|
+    t.string   "filename"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "locations", :force => true do |t|
     t.string   "address_1"
     t.string   "address_2"
@@ -40,6 +55,14 @@ ActiveRecord::Schema.define(:version => 20121221062301) do
     t.string   "state"
     t.string   "zip_code"
     t.string   "county"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "password"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

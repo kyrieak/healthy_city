@@ -1,0 +1,9 @@
+<h1>Activities#new</h1>
+<div>
+  <%= form_for @activities do |a| %>
+    Label <%= a.text_field :label %>
+    Description <%= a.text_field :description %>
+    Icon <%= a.select :icon_id, @icon_options %>
+    <%= u.submit %>
+  <% end %>
+</div>

@@ -1,0 +1,9 @@
+<h1>Users#new</h1>
+<div>
+  <%= form_for @user do |u| %>
+    Name <%= u.text_field :name %>
+    Email <%= u.text_field :email %>
+    Password <%= u.text_field :password %>
+    <%= u.submit %>
+  <% end %>
+</div>

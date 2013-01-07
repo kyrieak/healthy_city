@@ -1,0 +1,6 @@
+<h1>Users#show</h1>
+<div>
+  <% @user.activities.each do |a| %>
+    <%= render :partial => "icon", :locals => { :a => a, :user => @user } %>
+  <% end %>
+</div>
