@@ -1,5 +1,19 @@
 HealthyCity::Application.routes.draw do
 
+  get "completions/index"
+
+  get "completions/show"
+
+  get "completions/new"
+
+  get "completions/create"
+
+  get "completions/edit"
+
+  get "completions/update"
+
+  get "completions/destroy"
+
   resources :users do
     resources :activities
   end

@@ -7,6 +7,12 @@ class Activity < ActiveRecord::Base
 
   belongs_to :user
   belongs_to :icon
+  has_many :completions
 
   delegate :filename, :to => :icon
+
+  def completion(date)
+    self.completions.where(:date => date) ? (:done) : (:not_done)
+  end
+
 end
