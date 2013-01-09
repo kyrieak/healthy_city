@@ -2,4 +2,7 @@
   <% total.times do %>
     <td class="icon"><%= image_tag(a.filename) %></td>
   <% end %>
+  <% (7 - total).times do %>
+    <td class="icon"></td>
+  <% end %>
 </tr>
