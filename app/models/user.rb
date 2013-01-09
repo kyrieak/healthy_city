@@ -6,63 +6,18 @@ class User < ActiveRecord::Base
   has_many :icons, :through => :activities
   has_many :completions, :through => :activities
 
-  def activities_on(date)
-    self.activities.group_by{ |a| a.completion(date) }
-  end
+  def activity_totals_for_cweek(date)
+    totals = Hash.new
 
-  def activities_check(date)
-    check = Hash.new
-    acts = activities_on(date)
-
-    acts[:done].each do |a|
-      check[a] = 1
-    end
-    acts[:not_done].each do |a|
-      check[a] = 0
-    end
-    check
-  end
-
-  def completed_cweek(date)
-    check_cweek = Hash.new
-    activities_cw = days_cweek(date).collect{ |day| activities_check(day) }
-    
     self.activities.each do |a|
-      check_cweek[a] = activities_cw.inject(0) { |sum, acw| sum + acw[a] }
+      totals[a] = cweek_total_for(a, date)
     end
-
-    check_cweek
+    totals
   end
 
 #########################################################################
 
-  # def activities_done_cweek(date)
-  #   activities_cw = Hash.new
-  #   days_cweek(date).each do |day|
-  #     activities_cw[day] = activities_done(day)
-  #   end
-  #   activities_cw
-  # end
-
-  # def activities_cweek(date)
-  #   activities_cw = Hash.new
-  #   days_cweek(date).each do |day|
-  #     activities_cw[day] = activities_on(day)
-  #   end
-  #   activities_cw
-  # end
-
-  private
-
-  def checked(date)
-    checked = Hash.new(0)
-    activities_on(date)[:done].each do |a|
-      checked[a] += 1
-    end
-    checked
-  end
-
-  def days_cweek(date)
+  def days_in_cweek(date)
     days = [date]
     current_day = date.prev_day
 
@@ -80,6 +35,21 @@ class User < ActiveRecord::Base
     end
 
     days
+  end
+
+  def activities_on(date)
+    check = Hash.new
+    self.activities.each do |a|
+      a.done?(date) ? (check[a] = 1) : (check[a] = 0)
+    end
+    check
+  end
+
+  def cweek_total_for(a, date)
+    results = days_in_cweek(date).collect do |day|
+      activities_on(day)[a]
+    end
+    results.inject(:+)
   end
 
 end

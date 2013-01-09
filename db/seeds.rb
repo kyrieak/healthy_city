@@ -26,3 +26,11 @@ require 'csv'
     Activity.create!({ :user_id => 1, :icon_id => index, :label => "Test #{index}",
       :description => "pink #{index} computer glasses." })
   end
+
+  Activity.all[0..7].each do |a|
+    Completion.create!({ :activity_id => a.id, :date => Date.today.prev_day })
+  end
+
+  Completion.create!({ :activity_id => 2, :date => Date.today })
+  Completion.create!({ :activity_id => 5, :date => Date.today })
+  Completion.create!({ :activity_id => 6, :date => Date.today })
