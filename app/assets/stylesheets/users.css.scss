@@ -10,7 +10,21 @@
   border: solid 1px;
 }
 
-img
+.icon-big
+{
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  border: solid 1px;
+}
+
+img.icon-big
+{
+  max-width: 150px;
+  max-height: 150px;
+}
+
+img.icon
 {
   max-width: 50px;
   max-height: 50px;
@@ -20,4 +34,10 @@ table
 {
   margin: 5px;
   border: solid 1px;
+  box-shadow: 10px 10px 5px #888888;
+  background-color: white;
+}
+
+body {
+  font-family: "Gill Sans MT","Gill Sans",GillSans,Arial,Helvetica,sans-serif;
 }

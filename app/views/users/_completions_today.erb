@@ -5,10 +5,9 @@
     <tr>
       <% activities.each do |a| %>
         <td>
-          <% if completions[a] %>
-            <%= "Hi" %>
-            <%= render :partial => "icon", :locals => { :a => a } %>
-          <% end %>
+          <%= render :partial => "icon", :locals => { :a => a,
+                                                      :done => completions[a],
+                                                      :icon_style => "icon-big" } %>
         </td>
       <% end %>
     </tr>

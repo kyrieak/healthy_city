@@ -8,9 +8,9 @@
     <tr>
       <% completions.values.each do |comp| %>
         <td>
-          <% if comp[a] %>
-            <%= render :partial => "icon", :locals => { :a => a } %>
-          <% end %>
+          <%= render :partial => "icon", :locals => { :a => a,
+                                                      :done => comp[a],
+                                                      :icon_style => "icon" } %>
         </td>
       <% end %>
     </tr>

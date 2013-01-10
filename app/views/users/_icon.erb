@@ -1,4 +1,5 @@
-<div class="icon">
-  <%= link_to image_tag(a.filename),
+<% tag("div", :class => icon_style) %>
+  <% done ? (opacity_val = 1) : (opacity_val = 0.2) %>
+  <%= link_to image_tag(a.filename, :class => icon_style, :style => "opacity:#{opacity_val};"),
         user_activity_path(:user_id => a.user.id, :id => a.id ) %>
-</div>
+<% tag("/div") %>

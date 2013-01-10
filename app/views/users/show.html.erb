@@ -4,7 +4,7 @@
   <%= render :partial => "completions_today",
              :locals => {
                           :activities => @activities,
-                          :completions => @completions[Date.today.prev_day]
+                          :completions => @completions[Date.today]
                         }
   %>
 

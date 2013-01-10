@@ -32,6 +32,8 @@ ActiveRecord::Schema.define(:version => 20130107200540) do
   create_table "completions", :force => true do |t|
     t.integer  "activity_id"
     t.date     "date"
+    t.integer  "week"
+    t.integer  "year"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
