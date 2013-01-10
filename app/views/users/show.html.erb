@@ -7,11 +7,12 @@
                           :completions => @completions[Date.today]
                         }
   %></br>
-  
+
   <%= render :partial => "completions_week",
              :locals => {
                           :activities => @activities,
                           :completions => @completions
                         }
   %>
+  <%= image_tag("whiteboard.jpg") %>
 </div>
