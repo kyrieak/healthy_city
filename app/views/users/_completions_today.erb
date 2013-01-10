@@ -1,0 +1,15 @@
+<table>
+    <% activities.each do |a| %>
+      <th><%= a.label %></th>
+    <% end %>
+    <tr>
+      <% activities.each do |a| %>
+        <td>
+          <% if completions[a] %>
+            <%= "Hi" %>
+            <%= render :partial => "icon", :locals => { :a => a } %>
+          <% end %>
+        </td>
+      <% end %>
+    </tr>
+</table>

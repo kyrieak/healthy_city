@@ -11,13 +11,4 @@ class Activity < ActiveRecord::Base
 
   delegate :filename, :to => :icon
 
-  def done?(date)
-    results = self.completions.where(:date => date)
-    results.any?
-  end
-
-  # def status(date)
-  #   done?(date) ? (:done) : (:not_done)
-  # end
-
 end

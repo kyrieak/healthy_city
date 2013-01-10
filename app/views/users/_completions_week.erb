@@ -1,0 +1,18 @@
+<table>
+  <tr>
+    <% completions.each_key do |day| %>
+      <th><%= day.strftime("%A") %></th>
+    <% end %>
+  </tr>
+  <% activities.each do |a| %>
+    <tr>
+      <% completions.values.each do |comp| %>
+        <td>
+          <% if comp[a] %>
+            <%= render :partial => "icon", :locals => { :a => a } %>
+          <% end %>
+        </td>
+      <% end %>
+    </tr>
+  <% end %>
+</table>

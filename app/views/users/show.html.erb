@@ -1,9 +1,17 @@
 <h1>Users#show</h1>
+
 <div>
-  <table>
-  <% @user.activity_totals_for_cweek(Date.today).each do |a, total| %>
-    <%= render :partial => "activity_icons",
-               :locals => { :a => a, :total => total } %>
-  <% end %>
-  </table>
+  <%= render :partial => "completions_today",
+             :locals => {
+                          :activities => @activities,
+                          :completions => @completions[Date.today.prev_day]
+                        }
+  %>
+
+  <%= render :partial => "completions_week",
+             :locals => {
+                          :activities => @activities,
+                          :completions => @completions
+                        }
+  %>
 </div>

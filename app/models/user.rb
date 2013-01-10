@@ -6,50 +6,38 @@ class User < ActiveRecord::Base
   has_many :icons, :through => :activities
   has_many :completions, :through => :activities
 
-  def activity_totals_for_cweek(date)
-    totals = Hash.new
-
-    self.activities.each do |a|
-      totals[a] = cweek_total_for(a, date)
+  def completions_for_week(date)
+    comp = Hash.new
+    days_of_week(date).each do |day|
+      comp[day] = completions_on(day)
     end
-    totals
+    comp
   end
 
 #########################################################################
 
-  def days_in_cweek(date)
-    days = [date]
-    current_day = date.prev_day
-
-    until current_day.sunday?
-      days << current_day
-      current_day = current_day.prev_day
-    end
-    
-    days.reverse!
-    current_day = date.next
-    
-    until current_day.monday?
-      days << current_day
-      current_day = current_day.next
-    end
-
-    days
+  def completions_on(date)
+    comp = self.completions.where({ :date => date })
+    comp.group_by{ |c| c.activity }
   end
 
-  def activities_on(date)
-    check = Hash.new
-    self.activities.each do |a|
-      a.done?(date) ? (check[a] = 1) : (check[a] = 0)
-    end
-    check
-  end
+  def days_of_week(date)
+    day = date
+    week = []
 
-  def cweek_total_for(a, date)
-    results = days_in_cweek(date).collect do |day|
-      activities_on(day)[a]
+    until day.sunday?
+      week << day
+      day = day.prev_day
     end
-    results.inject(:+)
+
+    day = date
+    week.reverse!
+
+    until day.monday?
+      week << day
+      day = day.next
+    end
+    week
   end
 
 end

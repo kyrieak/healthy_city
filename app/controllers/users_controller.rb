@@ -2,6 +2,8 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @activities = @user.activities
+    @completions = @user.completions_for_week(Date.today)
   end
 
   def new
