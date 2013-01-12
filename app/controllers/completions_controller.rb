@@ -3,7 +3,7 @@ class CompletionsController < ApplicationController
   end
 
   def new
-    @completion = Completion.new
+    @completion = Completion.new(params[:completion])
   end
 
   def create

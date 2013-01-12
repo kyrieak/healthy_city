@@ -3,7 +3,11 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @activities = @user.activities
-    @completions = @user.completions_for_week(Date.today)
+    @progress = @user.progress(Date.today)
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   def new
@@ -26,4 +30,5 @@ class UsersController < ApplicationController
 
   def destroy
   end
+
 end

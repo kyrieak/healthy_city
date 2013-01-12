@@ -9,8 +9,7 @@
       <% completions.values.each do |comp| %>
         <td>
           <%= render :partial => "icon", :locals => { :a => a,
-                                                      :done => comp[a],
-                                                      :icon_style => "icon" } %>
+                                                      :done => comp[a] } %>
         </td>
       <% end %>
     </tr>

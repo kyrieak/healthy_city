@@ -5,9 +5,8 @@
     <tr>
       <% activities.each do |a| %>
         <td>
-          <%= render :partial => "icon", :locals => { :a => a,
-                                                      :done => completions[a],
-                                                      :icon_style => "icon-big" } %>
+          <%= render :partial => "icon_big", :locals => { :a => a,
+                                                          :done => completions[a] } %>
         </td>
       <% end %>
     </tr>

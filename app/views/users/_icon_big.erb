@@ -1,0 +1,6 @@
+<% tag("div", :class => "icon-big") %>
+  <% done ? (opacity_val = 1) : (opacity_val = 0.2) %>
+  <%= image_tag(a.filename,
+                :class => "icon-big",
+                :style => "opacity:#{opacity_val};") %>              
+<% tag("/div") %>

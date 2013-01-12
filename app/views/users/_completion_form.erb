@@ -1,0 +1,15 @@
+<script type="text/javascript">
+   <% activity_id %> = activity.getId;
+</script>
+
+<%= form_for @completion do |f| %>
+  <%= f.select_tag("activity",
+                    options_from_collection_for_select(@activities, "id", "label", activity_id)
+                  ) :activity_id %>
+  <%= f.date_select("completion",
+                    "date",
+                    :use_month_numbers => true,
+                    :date_separator => "/"
+                   ) :date %>
+  <%= f.submit "Done?" %>
+<% end %>

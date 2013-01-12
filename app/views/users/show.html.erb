@@ -4,15 +4,16 @@
   <%= render :partial => "completions_today",
              :locals => {
                           :activities => @activities,
-                          :completions => @completions[Date.today]
+                          :completions => @progress[:complete][Date.today]
                         }
   %></br>
 
   <%= render :partial => "completions_week",
              :locals => {
                           :activities => @activities,
-                          :completions => @completions
+                          :completions => @progress[:complete]
                         }
   %>
-  <%= image_tag("whiteboard.jpg") %>
+  <div id="comp_form">
+  </div>
 </div>
