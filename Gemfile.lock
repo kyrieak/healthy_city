@@ -115,7 +115,7 @@ DEPENDENCIES
   area (~> 0.6.1)!
   coffee-rails (~> 3.2.1)
   fastercsv (~> 1.5.5)
-  jquery-rails
+  jquery-rails (~> 2.1)
   rails (= 3.2.9)
   sass-rails (~> 3.2.3)
   sqlite3

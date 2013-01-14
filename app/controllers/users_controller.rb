@@ -2,8 +2,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @activities = @user.activities
-    @progress = @user.progress(Date.today)
+    @progress = @user.progress(days_of_week(Date.today))
     respond_to do |format|
       format.html
       format.js
@@ -19,7 +18,6 @@ class UsersController < ApplicationController
 
   def create
     @user = User.create!(params[:user])
-    redirect_to new_user_activities_path(:user_id => @user.id)
   end
 
   def edit
@@ -29,6 +27,27 @@ class UsersController < ApplicationController
   end
 
   def destroy
+  end
+
+  private
+
+  def days_of_week(date)
+    day = date
+    week = []
+
+    until (day.sunday? && (week.length > 0))
+      week << day
+      day = day.prev_day
+    end
+
+    day = date.next
+    week.reverse!
+
+    until (day.monday? && (week.length == 7))
+      week << day
+      day = day.next
+    end
+    week
   end
 
 end

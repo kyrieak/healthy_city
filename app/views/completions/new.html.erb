@@ -1,2 +1,13 @@
-<h1>Completions#new</h1>
-<p>Find me in app/views/completions/new.html.erb</p>
+foo
+<%= params[:a_id] %>
+
+<%= form_for @completion do |f| %>
+
+  <%= f.select(:activity_id,
+               @activity_options.collect{ |a| [a.label, a.id] },
+               ) %>
+
+  <%= f.text_field :date %>
+  
+  <%= f.submit "Done?" %>
+<% end %>

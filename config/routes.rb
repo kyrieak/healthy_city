@@ -5,6 +5,8 @@ HealthyCity::Application.routes.draw do
     resources :completions
   end
 
+  resources :completions
+
   resources :hospitals
   resources :locations
 

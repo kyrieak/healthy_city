@@ -1,0 +1,17 @@
+<table>
+    <% activities.each do |a| %>
+      <th><%= a.label %></th>
+    <% end %>
+    <tr>
+      <% activities.each do |a| %>
+        <td>
+          <%= render :partial => "icon_big",
+                     :locals => {
+                                   :a => a,
+                                   :done => progress[:done].include?(a)
+                                }
+          %>
+        </td>
+      <% end %>
+    </tr>
+</table>
