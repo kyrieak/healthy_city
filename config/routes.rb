@@ -1,5 +1,7 @@
 HealthyCity::Application.routes.draw do
 
+  resources :capacities
+
   resources :users do
     resources :activities
     resources :completions

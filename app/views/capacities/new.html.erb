@@ -1,0 +1,15 @@
+<h1>Capacities#new</h1>
+<p>Find me in app/views/capacities/new.html.erb</p>
+
+<h1>Users#new</h1>
+<div>
+  <%= form_for @capacity do |c| %>
+    Hospital: <%= c.select(:hospital_id, @hospitals.collect{ |h| [h.name, h.id] }) %></br>
+    Number of Beds: <%= c.text_field :bed_count %></br>
+    Number of Full-Time Nurses: <%= c.text_field :full_time_nurse_count %></br>
+    Teaching Hospital? T: <%= c.radio_button(:teaching_hospital, '0') %></br>
+    <%= "F:".rjust(16, "_")%> <%= c.radio_button(:teaching_hospital, '1') %></br>
+    Source: <%= c.text_field :source %></br>
+    <%= c.submit %>
+  <% end %>
+</div>

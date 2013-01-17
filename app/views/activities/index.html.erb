@@ -1,2 +1,10 @@
 <h1>Activities#index</h1>
-<p>Find me in app/views/activities/index.html.erb</p>
+<div style="padding: 0px;">
+  <% @activities.each do |a| %>
+    <div style="display: inline-block; border: solid gray 2px; background-color: white; margin: 2px; width: 200px; padding: 4px;">
+      <span style="margin: 0px;"><%= image_tag(a.filename, :class => "icon") %></span></br>
+      <span style="margin: 0px;"><%= a.label %></span></br>
+      <span style="margin: 0px;"><%= a.description %></span>
+    </div>
+  <% end %>
+</div>

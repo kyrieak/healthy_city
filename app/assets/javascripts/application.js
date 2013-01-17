@@ -12,7 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.ui.core
+//= require jquery.ui.widget
+//= require jquery.ui.accordion
+//= require jquery.ui.mouse
+//= require jquery.ui.selectable
 //= require users
+//= require activities
 //= require_self
 //= require_tree .
 

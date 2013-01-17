@@ -1,3 +1,34 @@
 // Place all the styles related to the Activities controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.icon_box
+{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: solid 1px;
+  display: inline-block;
+}
+
+img.icon_option
+{
+  max-width: 50px;
+  max-height: 50px;
+}
+
+#accordion{
+  width: 600px;
+  height: 125px;
+}
+
+#scroll_box{
+  width: 600px;
+  height: 75px;
+  overflow-x: scroll;
+  white-space:nowrap;
+}
+
+//#content{
+//  height: 100%;
+//}

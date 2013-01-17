@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  hospital_id: 1
+  bed_count: 1
+  full_time_nurse_count: 1
+  teaching_hospital: false
+
+two:
+  hospital_id: 1
+  bed_count: 1
+  full_time_nurse_count: 1
+  teaching_hospital: false

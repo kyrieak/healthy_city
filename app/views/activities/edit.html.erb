@@ -1,2 +1,21 @@
 <h1>Activities#edit</h1>
-<p>Find me in app/views/activities/edit.html.erb</p>
+<%= form_for @activity, :url => { :action => "update", :user_id => @user.id } do |f| %>
+  <div id="accordion">
+    <h3>kjhkjh</h3>
+    <div id="scroll_box">
+        <% @icons.each do |i| %>
+          <div class="icon_box">
+            <%= image_tag(i.filename, :class => :icon_option) %>
+          </div>
+        <% end %>
+    </div>
+  </div>
+  <div>
+    <%= f.text_field :label %>
+  </div>
+  <div>
+    <%= f.text_field :description %>
+  </div>
+  <%= f.submit "Done?" %>
+<% end %>
+</body>

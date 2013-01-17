@@ -24,9 +24,16 @@ class ActivitiesController < ApplicationController
   end
 
   def edit
+    @user = User.find(params[:user_id])
+    @activity = Activity.find(params[:id])
+    @icons = Icon.all
+    respond_to do |format|
+      format.html
+    end
   end
 
   def update
+    @activity = Activity.update_attributes(params[:id])
   end
 
   def destroy

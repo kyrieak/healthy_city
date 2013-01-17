@@ -11,4 +11,6 @@
  *= require_self
  */
 
-@import "users.css.scss"
+@import "users.css.scss";
+@import "hospitals.css.scss";
+@import "activities.css.scss";

@@ -3,16 +3,27 @@
 <% @hospitals.keys.each do |state| %>
 	<h3><%= state %></h3>
 	<table>
-	<% @hospitals[state].each do |h| %>
 		<tr>
-			<td><%= h.name.split.collect{ |n| n.capitalize }.join(" ") %></td>
-			<td><%= h.location.city.split.collect{ |n| n.capitalize }.join(" ") %></td>
-			<td><%= h.provider_number %></td>
-			<td><%= h.phone_number %></td>
-			<td><%= h.hospital_type %></td>
-			<td><%= h.hospital_ownership %></td>
-			<td><%= h.emergency_services.to_s %></td>
+			<% @table_headers.each do |th| %>
+				<th><%= th %></th>
+			<% end %>
 		</tr>
+	<% odd = [true, false] %>
+	<% @hospitals[state].each do |h| %>
+		<% if odd.first %>
+			<tr class="peach">
+		<% else %>
+			<tr class="blue" %>
+		<% end %>
+		<% odd.reverse! %>
+				<td><%= h.name.split.collect{ |n| n.capitalize }.join(" ") %></td>
+				<td><%= h.location.city.split.collect{ |n| n.capitalize }.join(" ") %></td>
+				<td><%= h.provider_number %></td>
+				<td><%= h.phone_number %></td>
+				<td><%= h.hospital_type %></td>
+				<td><%= h.hospital_ownership %></td>
+				<td><%= h.emergency_services.to_s %></td>
+			</tr>
 	<% end %>
 	</table>
 <% end %>
